@@ -8,13 +8,14 @@
   "cadence": "RRULE:FREQ=DAILY",
   "timeOfDay": "08:00",
   "timezone": "Europe/London",
-  "savedAt": "2026-09-15T08:33:00Z",
+  "savedAt": "2026-09-15T09:32:00Z",
   "paths": {
     "catalog": "src/lib/catalog.ts",
     "protocol": "src/lib/protocol.ts",
     "store": "src/lib/store.ts",
     "train": "src/routes/train.tsx",
-    "ledgerAlias": ["catalog.ts", "protocol.ts"]
+    "tokenomics": "TOKENOMICS.json",
+    "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
     "id": "pulse-berth-tide",

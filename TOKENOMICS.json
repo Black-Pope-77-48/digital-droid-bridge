@@ -1,0 +1,54 @@
+{
+  "ticker": "FAITH",
+  "protocol": "Faith.Emezue Droidspeak",
+  "runtime": "Digital Droid Bridge",
+  "ledger": "Black-Pope-77-48/digital-droid-bridge",
+  "status": "design",
+  "writtenAt": "2026-09-15T09:32:00Z",
+  "chain": null,
+  "contract": null,
+  "unit": "protocol credit — not a listed coin",
+  "cap": 21000,
+  "decimals": 0,
+  "allocation": {
+    "protocolMint": 21000,
+    "presale": 0,
+    "team": 0,
+    "treasury": 0,
+    "liquidity": 0
+  },
+  "mint": {
+    "trigger": "accepted unique JobTemplate id in catalog (prefix pulse-)",
+    "phases": [
+      { "id": "lock", "pulses": [1, 1000], "rate": 8, "maxMint": 8000 },
+      { "id": "seam", "pulses": [1001, 4000], "rate": 3, "maxMint": 9000 },
+      { "id": "hold", "pulses": [4001, 8000], "rate": 1, "maxMint": 4000 }
+    ],
+    "afterCap": "no mint",
+    "noInflationRewards": true
+  },
+  "burn": {
+    "trigger": "decode or settle a pulse into a full job on the Bridge",
+    "amount": 1
+  },
+  "utility": [
+    "unit of account for compressed Droidspeak pulses",
+    "spend 1 FAITH to expand shorthand into a full job",
+    "not a jackpot, stake yield, or listed market"
+  ],
+  "snapshot": {
+    "pulsesAccepted": 12,
+    "phase": "lock",
+    "rate": 8,
+    "minted": 96,
+    "burned": 0,
+    "circulating": 96,
+    "remainingToCap": 20904
+  },
+  "notTheseTickers": [
+    "faith.gg Sui FAITH — 69M cap, Tests of Faith",
+    "FaithCoin ETH 0xe531642e9bb5d027e9c20e03284287b97919a9a5 — 25M, 2018",
+    "BSC PinkSale FAITH 0x109Cbc38dfC2327Dd9E1A580B970F7A87B9d4bBE — 100M",
+    "Solana Future Arises In The Heart"
+  ]
+}
