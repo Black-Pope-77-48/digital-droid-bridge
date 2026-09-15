@@ -8,11 +8,18 @@
   "cadence": "RRULE:FREQ=DAILY",
   "timeOfDay": "08:00",
   "timezone": "Europe/London",
-  "savedAt": "2026-09-15T08:07:00Z",
+  "savedAt": "2026-09-15T08:33:00Z",
+  "paths": {
+    "catalog": "src/lib/catalog.ts",
+    "protocol": "src/lib/protocol.ts",
+    "store": "src/lib/store.ts",
+    "train": "src/routes/train.tsx",
+    "ledgerAlias": ["catalog.ts", "protocol.ts"]
+  },
   "lastPulse": {
-    "id": "pulse-claim-adj",
-    "title": "Claims adjudication pulse",
-    "shorthand": "CLAIM.ADJ PULSE // hold-file",
-    "at": "2026-09-15T08:04:22Z"
+    "id": "pulse-berth-tide",
+    "title": "Berth tide gate",
+    "shorthand": "BERTH.TIDE GATE // hull-ok",
+    "at": "2026-09-15T08:33:00Z"
   }
 }
