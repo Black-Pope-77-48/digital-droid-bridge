@@ -1,0 +1,18 @@
+{
+  "name": "Digital Droid Bridge",
+  "protocol": "Faith.Emezue Droidspeak",
+  "ticker": "FAITH",
+  "runtime": "Digital Droid Bridge",
+  "github": "Black-Pope-77-48/digital-droid-bridge",
+  "automation": "Faith.Emezue Droidspeak trainer",
+  "cadence": "RRULE:FREQ=DAILY",
+  "timeOfDay": "08:00",
+  "timezone": "Europe/London",
+  "savedAt": "2026-09-15T08:07:00Z",
+  "lastPulse": {
+    "id": "pulse-claim-adj",
+    "title": "Claims adjudication pulse",
+    "shorthand": "CLAIM.ADJ PULSE // hold-file",
+    "at": "2026-09-15T08:04:22Z"
+  }
+}
