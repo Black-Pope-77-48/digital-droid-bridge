@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-berth-tide",
-    "title": "Berth tide gate",
-    "shorthand": "BERTH.TIDE GATE // hull-ok",
-    "at": "2026-09-15T08:33:00Z"
+    "id": "pulse-silo-weigh",
+    "title": "Silo lot weigh",
+    "shorthand": "SILO.LOT WEIGH // yield-ok",
+    "at": "2026-09-16T07:14:00Z"
   }
 }

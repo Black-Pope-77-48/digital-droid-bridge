@@ -128,4 +128,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "anchor-01",
     shorthand: "BERTH.TIDE GATE // hull-ok",
   },
+  {
+    id: "pulse-silo-weigh",
+    title: "Silo lot weigh",
+    vertical: "agrifood",
+    agentId: "haul-03",
+    shorthand: "SILO.LOT WEIGH // yield-ok",
+  },
 ];
