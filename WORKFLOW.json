@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-silo-weigh",
-    "title": "Silo lot weigh",
-    "shorthand": "SILO.LOT WEIGH // yield-ok",
-    "at": "2026-09-16T07:14:00Z"
+    "id": "pulse-recon-sweep",
+    "title": "Ledger recon sweep",
+    "shorthand": "LED.RECON SWEEP // break-0",
+    "at": "2026-09-17T07:18:55Z"
   }
 }

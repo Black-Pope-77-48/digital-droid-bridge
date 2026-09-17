@@ -135,4 +135,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "haul-03",
     shorthand: "SILO.LOT WEIGH // yield-ok",
   },
+  {
+    id: "pulse-recon-sweep",
+    title: "Ledger recon sweep",
+    vertical: "finance",
+    agentId: "iris-21",
+    shorthand: "LED.RECON SWEEP // break-0",
+  },
 ];
