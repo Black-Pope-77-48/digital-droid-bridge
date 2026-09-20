@@ -1,0 +1,8 @@
+{
+  "plain": "test data",
+  "code": "TEST.DATA PULSE // all-vert",
+  "kind": "native",
+  "at": "2026-09-20T00:51:00Z",
+  "note": "Fan-out to every vertical. Live hops ack the code. Planned hops ack NO.BODY HOLD. Cannot reach physical LAN devices.",
+  "automation": "5d0858ae-e067-4ac1-aa89-06c493463a6b"
+}
