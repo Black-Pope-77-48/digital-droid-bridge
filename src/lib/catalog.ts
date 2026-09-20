@@ -142,4 +142,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "LED.RECON SWEEP // break-0",
   },
+  {
+    id: "pulse-infusion-lock",
+    title: "Infusion pump lock",
+    vertical: "health",
+    agentId: "nest-18",
+    shorthand: "INF.PUMP LOCK // rate-ok",
+  },
 ];
