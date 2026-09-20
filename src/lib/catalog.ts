@@ -149,4 +149,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "nest-18",
     shorthand: "INF.PUMP LOCK // rate-ok",
   },
+  {
+    id: "pulse-cast-air",
+    title: "Studio feed air",
+    vertical: "media",
+    agentId: "drift-33",
+    shorthand: "CAST.FEED AIR // cut-ok",
+  },
 ];
