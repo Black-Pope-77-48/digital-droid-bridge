@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-recon-sweep",
-    "title": "Ledger recon sweep",
-    "shorthand": "LED.RECON SWEEP // break-0",
-    "at": "2026-09-17T07:18:55Z"
+    "id": "pulse-infusion-lock",
+    "title": "Infusion pump lock",
+    "shorthand": "INF.PUMP LOCK // rate-ok",
+    "at": "2026-09-20T00:54:00Z"
   }
 }
