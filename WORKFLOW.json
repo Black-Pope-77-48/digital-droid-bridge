@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-cast-air",
-    "title": "Studio feed air",
-    "shorthand": "CAST.FEED AIR // cut-ok",
-    "at": "2026-09-20T07:16:00Z"
+    "id": "pulse-strake-form",
+    "title": "Strake plate form",
+    "shorthand": "STRAKE.PLT FORM // fair-ok",
+    "at": "2026-09-21T07:23:00Z"
   }
 }

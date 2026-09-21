@@ -156,4 +156,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "drift-33",
     shorthand: "CAST.FEED AIR // cut-ok",
   },
+  {
+    id: "pulse-strake-form",
+    title: "Strake plate form",
+    vertical: "maritime",
+    agentId: "forge-44",
+    shorthand: "STRAKE.PLT FORM // fair-ok",
+  },
 ];
