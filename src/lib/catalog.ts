@@ -163,4 +163,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "forge-44",
     shorthand: "STRAKE.PLT FORM // fair-ok",
   },
+  {
+    id: "pulse-etch-hold",
+    title: "Wafer etch hold",
+    vertical: "compute",
+    agentId: "iris-21",
+    shorthand: "WAF.ETCH HOLD // spec-ok",
+  },
 ];

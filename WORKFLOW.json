@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-strake-form",
-    "title": "Strake plate form",
-    "shorthand": "STRAKE.PLT FORM // fair-ok",
-    "at": "2026-09-21T07:23:00Z"
+    "id": "pulse-etch-hold",
+    "title": "Wafer etch hold",
+    "shorthand": "WAF.ETCH HOLD // spec-ok",
+    "at": "2026-09-22T07:16:54Z"
   }
 }
