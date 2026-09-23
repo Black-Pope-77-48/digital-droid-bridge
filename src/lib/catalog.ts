@@ -170,4 +170,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "WAF.ETCH HOLD // spec-ok",
   },
+  {
+    id: "pulse-sterile-field",
+    title: "Sterile field hold",
+    vertical: "health",
+    agentId: "iris-21",
+    shorthand: "STER.FIELD HOLD // pack-ok",
+  },
 ];
