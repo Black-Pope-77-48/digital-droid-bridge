@@ -177,4 +177,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "STER.FIELD HOLD // pack-ok",
   },
+  {
+    id: "pulse-belt-tens",
+    title: "Belt tension lock",
+    vertical: "logistics",
+    agentId: "rig-09",
+    shorthand: "BELT.TENS LOCK // load-ok",
+  },
 ];
