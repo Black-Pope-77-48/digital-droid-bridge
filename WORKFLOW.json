@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-sterile-field",
-    "title": "Sterile field hold",
-    "shorthand": "STER.FIELD HOLD // pack-ok",
-    "at": "2026-09-23T07:22:00Z"
+    "id": "pulse-belt-tens",
+    "title": "Belt tension lock",
+    "shorthand": "BELT.TENS LOCK // load-ok",
+    "at": "2026-09-24T07:02:00Z"
   }
 }
