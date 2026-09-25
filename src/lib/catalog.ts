@@ -184,4 +184,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "rig-09",
     shorthand: "BELT.TENS LOCK // load-ok",
   },
+  {
+    id: "pulse-batt-seat",
+    title: "Battery pack seat",
+    vertical: "energy",
+    agentId: "nest-18",
+    shorthand: "BATT.PACK SEAT // therm-ok",
+  },
 ];
