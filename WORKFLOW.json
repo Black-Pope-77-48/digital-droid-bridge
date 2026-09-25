@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-belt-tens",
-    "title": "Belt tension lock",
-    "shorthand": "BELT.TENS LOCK // load-ok",
-    "at": "2026-09-24T07:02:00Z"
+    "id": "pulse-batt-seat",
+    "title": "Battery pack seat",
+    "shorthand": "BATT.PACK SEAT // therm-ok",
+    "at": "2026-09-25T07:00:00Z"
   }
 }
