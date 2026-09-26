@@ -198,4 +198,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "ATMO.SCRUB CYCLE // ppm-ok",
   },
+  {
+    id: "pulse-irr-valve",
+    title: "Irrigation valve lock",
+    vertical: "agrifood",
+    agentId: "nest-18",
+    shorthand: "IRR.VALVE LOCK // flow-ok",
+  },
 ];

@@ -12,7 +12,7 @@ export const VERTICAL_HINTS: Record<Vertical, string[]> = {
   climate: ["press", "atmo", "seal"],
   compute: ["opt", "scan", "sync", "wafer", "etch"],
   maritime: ["berth", "hull", "tide", "strake", "fair"],
-  agrifood: ["yield", "silo", "lot"],
+  agrifood: ["yield", "silo", "lot", "valve", "irrig"],
 };
 
 const STOP = new Set([
