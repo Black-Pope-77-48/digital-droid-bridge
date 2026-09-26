@@ -191,4 +191,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "nest-18",
     shorthand: "BATT.PACK SEAT // therm-ok",
   },
+  {
+    id: "pulse-atmo-scrub",
+    title: "Atmo scrub cycle",
+    vertical: "climate",
+    agentId: "kite-07",
+    shorthand: "ATMO.SCRUB CYCLE // ppm-ok",
+  },
 ];
