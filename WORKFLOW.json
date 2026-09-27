@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-irr-valve",
-    "title": "Irrigation valve lock",
-    "shorthand": "IRR.VALVE LOCK // flow-ok",
-    "at": "2026-09-26T07:15:00Z"
+    "id": "pulse-turb-pitch",
+    "title": "Turbine pitch lock",
+    "shorthand": "TURB.PITCH LOCK // rpm-ok",
+    "at": "2026-09-27T07:13:00Z"
   }
 }
