@@ -205,4 +205,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "nest-18",
     shorthand: "IRR.VALVE LOCK // flow-ok",
   },
+  {
+    id: "pulse-turb-pitch",
+    title: "Turbine pitch lock",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "TURB.PITCH LOCK // rpm-ok",
+  },
 ];
