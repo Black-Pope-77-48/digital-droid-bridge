@@ -212,4 +212,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "TURB.PITCH LOCK // rpm-ok",
   },
+  {
+    id: "pulse-crane-boom",
+    title: "Crane boom lock",
+    vertical: "logistics",
+    agentId: "rig-09",
+    shorthand: "CRANE.BOOM LOCK // reach-ok",
+  },
 ];
