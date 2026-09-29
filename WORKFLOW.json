@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-crane-boom",
-    "title": "Crane boom lock",
-    "shorthand": "CRANE.BOOM LOCK // reach-ok",
-    "at": "2026-09-28T07:14:00Z"
+    "id": "pulse-shaft-aln",
+    "title": "Shaft align lock",
+    "shorthand": "SHAFT.ALN LOCK // runout-ok",
+    "at": "2026-09-29T07:12:00Z"
   }
 }
