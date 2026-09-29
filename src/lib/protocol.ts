@@ -11,7 +11,7 @@ export const VERTICAL_HINTS: Record<Vertical, string[]> = {
   legal: ["clause", "file", "hold", "claim"],
   climate: ["press", "atmo", "seal"],
   compute: ["opt", "scan", "sync", "wafer", "etch"],
-  maritime: ["berth", "hull", "tide", "strake", "fair"],
+  maritime: ["berth", "hull", "tide", "strake", "fair", "shaft", "align"],
   agrifood: ["yield", "silo", "lot", "valve", "irrig"],
 };
 
