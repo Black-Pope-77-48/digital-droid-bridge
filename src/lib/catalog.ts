@@ -219,4 +219,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "rig-09",
     shorthand: "CRANE.BOOM LOCK // reach-ok",
   },
+  {
+    id: "pulse-shaft-aln",
+    title: "Shaft align lock",
+    vertical: "maritime",
+    agentId: "forge-44",
+    shorthand: "SHAFT.ALN LOCK // runout-ok",
+  },
 ];
