@@ -226,4 +226,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "forge-44",
     shorthand: "SHAFT.ALN LOCK // runout-ok",
   },
+  {
+    id: "pulse-stack-opac",
+    title: "Stack opacity hold",
+    vertical: "climate",
+    agentId: "kite-07",
+    shorthand: "STACK.OPAC HOLD // ppm-ok",
+  },
 ];
