@@ -233,4 +233,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "STACK.OPAC HOLD // ppm-ok",
   },
+  {
+    id: "pulse-permit-queue",
+    title: "Permit queue hold",
+    vertical: "civic",
+    agentId: "kite-07",
+    shorthand: "PERM.QUEUE HOLD // stamp-ok",
+  },
 ];
