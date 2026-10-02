@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-permit-queue",
-    "title": "Permit queue hold",
-    "shorthand": "PERM.QUEUE HOLD // stamp-ok",
-    "at": "2026-10-01T07:11:00Z"
+    "id": "pulse-docket-seal",
+    "title": "Docket seal hold",
+    "shorthand": "DOCKT.SEAL HOLD // file-ok",
+    "at": "2026-10-02T07:18:00Z"
   }
 }
