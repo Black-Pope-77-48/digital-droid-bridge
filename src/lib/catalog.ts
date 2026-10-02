@@ -240,4 +240,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "PERM.QUEUE HOLD // stamp-ok",
   },
+  {
+    id: "pulse-docket-seal",
+    title: "Docket seal hold",
+    vertical: "legal",
+    agentId: "iris-21",
+    shorthand: "DOCKT.SEAL HOLD // file-ok",
+  },
 ];
