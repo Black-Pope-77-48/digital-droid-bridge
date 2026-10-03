@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-docket-seal",
-    "title": "Docket seal hold",
-    "shorthand": "DOCKT.SEAL HOLD // file-ok",
-    "at": "2026-10-02T07:18:00Z"
+    "id": "pulse-cold-probe",
+    "title": "Cold chain probe",
+    "shorthand": "COLD.PROBE HOLD // temp-ok",
+    "at": "2026-10-03T07:15:00Z"
   }
 }
