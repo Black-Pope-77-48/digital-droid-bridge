@@ -247,4 +247,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "DOCKT.SEAL HOLD // file-ok",
   },
+  {
+    id: "pulse-cold-probe",
+    title: "Cold chain probe",
+    vertical: "agrifood",
+    agentId: "iris-21",
+    shorthand: "COLD.PROBE HOLD // temp-ok",
+  },
 ];
