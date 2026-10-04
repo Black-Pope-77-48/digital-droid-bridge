@@ -254,4 +254,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "COLD.PROBE HOLD // temp-ok",
   },
+  {
+    id: "pulse-cue-sheet",
+    title: "Cue sheet lock",
+    vertical: "media",
+    agentId: "drift-33",
+    shorthand: "CUE.SHEET LOCK // slate-ok",
+  },
 ];
