@@ -261,4 +261,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "drift-33",
     shorthand: "CUE.SHEET LOCK // slate-ok",
   },
+  {
+    id: "pulse-weld-bead",
+    title: "Weld bead hold",
+    vertical: "orbital",
+    agentId: "spar-12",
+    shorthand: "WELD.BEAD HOLD // bead-ok",
+  },
 ];
