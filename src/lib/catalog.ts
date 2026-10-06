@@ -268,4 +268,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "spar-12",
     shorthand: "WELD.BEAD HOLD // bead-ok",
   },
+  {
+    id: "pulse-nostro-bal",
+    title: "Nostro balance hold",
+    vertical: "finance",
+    agentId: "iris-21",
+    shorthand: "NOST.BAL HOLD // cut-ok",
+  },
 ];
