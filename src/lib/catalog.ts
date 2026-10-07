@@ -275,4 +275,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "NOST.BAL HOLD // cut-ok",
   },
+  {
+    id: "pulse-rad-plate",
+    title: "Radiograph plate hold",
+    vertical: "health",
+    agentId: "iris-21",
+    shorthand: "RAD.PLATE HOLD // dose-ok",
+  },
 ];
