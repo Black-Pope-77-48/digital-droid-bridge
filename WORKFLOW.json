@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-nostro-bal",
-    "title": "Nostro balance hold",
-    "shorthand": "NOST.BAL HOLD // cut-ok",
-    "at": "2026-10-06T07:13:00Z"
+    "id": "pulse-rad-plate",
+    "title": "Radiograph plate hold",
+    "shorthand": "RAD.PLATE HOLD // dose-ok",
+    "at": "2026-10-07T07:15:00Z"
   }
 }
