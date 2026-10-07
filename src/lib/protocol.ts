@@ -3,7 +3,7 @@ import { PULSE_TEMPLATES, type JobTemplate, type Vertical } from "./catalog";
 export const VERTICAL_HINTS: Record<Vertical, string[]> = {
   orbital: ["keel", "ring", "lattice", "spine", "seal", "weld", "bead"],
   energy: ["solar", "grid", "bus", "hinge", "batt", "pack", "turb", "pitch"],
-  health: ["vitals", "med", "triage", "infusion", "pump", "sterile"],
+  health: ["vitals", "med", "triage", "infusion", "pump", "sterile", "radio", "dose"],
   logistics: ["haul", "dock", "vector", "beam", "belt", "crane", "boom"],
   finance: ["clear", "settle", "ledger", "recon", "nostro", "balance"],
   civic: ["yard", "permit", "control", "queue", "stamp"],
