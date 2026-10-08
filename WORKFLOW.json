@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-rad-plate",
-    "title": "Radiograph plate hold",
-    "shorthand": "RAD.PLATE HOLD // dose-ok",
-    "at": "2026-10-07T07:15:00Z"
+    "id": "pulse-pallet-wrap",
+    "title": "Pallet wrap lock",
+    "shorthand": "PALL.WRAP LOCK // film-ok",
+    "at": "2026-10-08T07:15:00Z"
   }
 }
