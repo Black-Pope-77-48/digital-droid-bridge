@@ -282,4 +282,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "RAD.PLATE HOLD // dose-ok",
   },
+  {
+    id: "pulse-pallet-wrap",
+    title: "Pallet wrap lock",
+    vertical: "logistics",
+    agentId: "haul-03",
+    shorthand: "PALL.WRAP LOCK // film-ok",
+  },
 ];
