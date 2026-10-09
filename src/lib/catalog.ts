@@ -289,4 +289,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "haul-03",
     shorthand: "PALL.WRAP LOCK // film-ok",
   },
+  {
+    id: "pulse-swgr-rack",
+    title: "Switchgear rack lock",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "SWGR.RACK LOCK // trip-ok",
+  },
 ];
