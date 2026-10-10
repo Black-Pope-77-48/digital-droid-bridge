@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-swgr-rack",
-    "title": "Switchgear rack lock",
-    "shorthand": "SWGR.RACK LOCK // trip-ok",
-    "at": "2026-10-09T07:15:00Z"
+    "id": "pulse-probe-card",
+    "title": "Probe card seat",
+    "shorthand": "PROB.CARD SEAT // cont-ok",
+    "at": "2026-10-10T07:14:00Z"
   }
 }

@@ -296,4 +296,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "SWGR.RACK LOCK // trip-ok",
   },
+  {
+    id: "pulse-probe-card",
+    title: "Probe card seat",
+    vertical: "compute",
+    agentId: "iris-21",
+    shorthand: "PROB.CARD SEAT // cont-ok",
+  },
 ];
