@@ -303,4 +303,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "PROB.CARD SEAT // cont-ok",
   },
+  {
+    id: "pulse-hatch-seal",
+    title: "Cargo hatch seal",
+    vertical: "maritime",
+    agentId: "anchor-01",
+    shorthand: "HATCH.SEAL LOCK // press-ok",
+  },
 ];
