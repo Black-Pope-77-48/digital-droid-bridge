@@ -310,4 +310,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "anchor-01",
     shorthand: "HATCH.SEAL LOCK // press-ok",
   },
+  {
+    id: "pulse-mask-align",
+    title: "Mask align hold",
+    vertical: "compute",
+    agentId: "iris-21",
+    shorthand: "MASK.ALN HOLD // reg-ok",
+  },
 ];

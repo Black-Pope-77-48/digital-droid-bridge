@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-hatch-seal",
-    "title": "Cargo hatch seal",
-    "shorthand": "HATCH.SEAL LOCK // press-ok",
-    "at": "2026-10-11T07:16:00Z"
+    "id": "pulse-mask-align",
+    "title": "Mask align hold",
+    "shorthand": "MASK.ALN HOLD // reg-ok",
+    "at": "2026-10-12T07:19:00Z"
   }
 }
