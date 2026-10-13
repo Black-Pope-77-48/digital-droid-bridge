@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-mask-align",
-    "title": "Mask align hold",
-    "shorthand": "MASK.ALN HOLD // reg-ok",
-    "at": "2026-10-12T07:19:00Z"
+    "id": "pulse-fork-mast",
+    "title": "Forklift mast lock",
+    "shorthand": "FORK.MAST LOCK // height-ok",
+    "at": "2026-10-13T07:18:00Z"
   }
 }
