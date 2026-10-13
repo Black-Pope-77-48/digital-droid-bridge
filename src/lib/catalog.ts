@@ -317,4 +317,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "MASK.ALN HOLD // reg-ok",
   },
+  {
+    id: "pulse-fork-mast",
+    title: "Forklift mast lock",
+    vertical: "logistics",
+    agentId: "rig-09",
+    shorthand: "FORK.MAST LOCK // height-ok",
+  },
 ];
