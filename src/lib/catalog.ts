@@ -324,4 +324,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "rig-09",
     shorthand: "FORK.MAST LOCK // height-ok",
   },
+  {
+    id: "pulse-dial-filt",
+    title: "Dialysis filter lock",
+    vertical: "health",
+    agentId: "nest-18",
+    shorthand: "DIAL.FILT LOCK // flow-ok",
+  },
 ];
