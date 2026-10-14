@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-fork-mast",
-    "title": "Forklift mast lock",
-    "shorthand": "FORK.MAST LOCK // height-ok",
-    "at": "2026-10-13T07:18:00Z"
+    "id": "pulse-dial-filt",
+    "title": "Dialysis filter lock",
+    "shorthand": "DIAL.FILT LOCK // flow-ok",
+    "at": "2026-10-14T07:13:00Z"
   }
 }
