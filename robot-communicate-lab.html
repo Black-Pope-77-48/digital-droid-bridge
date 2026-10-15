@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redesigning How Robots Communicate — Interactive Lab</title>
+<style>
+  :root { --bg: #0a0e17; --card: #111827; --accent: #22d3ee; --text: #e5e7eb; --muted: #9ca3af; --warn: #f59e0b; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+  header { padding: 2rem 1.5rem; border-bottom: 1px solid #1f2937; text-align: center; }
+  h1 { margin: 0 0 0.5rem; font-size: 1.75rem; }
+  .sub { color: var(--muted); font-size: 0.95rem; }
+  main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+  .card { background: var(--card); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.25rem; border: 1px solid #1f2937; }
+  h2 { margin-top: 0; font-size: 1.25rem; color: var(--accent); }
+  .pulse { font-family: ui-monospace, monospace; background: #0f172a; padding: 0.75rem 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid var(--accent); }
+  button { background: var(--accent); color: #0a0e17; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 600; cursor: pointer; margin-right: 0.5rem; }
+  button:hover { filter: brightness(1.1); }
+  button.secondary { background: #374151; color: var(--text); }
+  .metric { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 1rem 0; }
+  .metric div { background: #0f172a; padding: 0.75rem 1rem; border-radius: 8px; min-width: 140px; }
+  .metric strong { display: block; font-size: 1.4rem; color: var(--accent); }
+  .limit { color: var(--warn); }
+  footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Redesigning How Robots Communicate</h1>
+  <p class="sub">Interactive Lab · Impossibility of Isolation · Reaction is the channel · 28 Oct 2022 notes</p>
+</header>
+<main>
+  <div class="card">
+    <h2>Core Law</h2>
+    <p>You cannot manipulate a system without the system reacting. Observation changes the observed. Absolute Zero (perfect alignment, zero entropy, 100% reconstruction) is unattainable.</p>
+    <p>Robots communicate by acknowledging the reaction, not by pretending isolation.</p>
+  </div>
+  <div class="card">
+    <h2>Droidspeak Pulse</h2>
+    <p>Compressed shorthand. Vertical chooses the machine. No full sentences.</p>
+    <div id="pulse" class="pulse">COLD.PROBE HOLD // temp-ok</div>
+    <button onclick="nextPulse()">Next Pulse</button>
+    <button class="secondary" onclick="randomPulse()">Random</button>
+  </div>
+  <div class="card">
+    <h2>Entropy & Pushback Lab</h2>
+    <p>Shannon entropy of the current message space. Higher entropy = more uncertainty = stronger reaction potential.</p>
+    <div class="metric">
+      <div><strong id="entropy">0.00</strong> H(x) bits</div>
+      <div><strong id="reaction">0</strong> reaction score</div>
+      <div class="limit"><strong id="limit">∞</strong> Absolute Zero distance</div>
+    </div>
+    <label>Message complexity: <input type="range" id="complex" min="1" max="100" value="40" oninput="updateLab()"></label>
+    <label style="margin-left:1rem">Adversarial noise: <input type="range" id="noise" min="0" max="100" value="10" oninput="updateLab()"></label>
+    <p id="lab-note" style="margin-top:1rem;color:var(--muted)"></p>
+  </div>
+  <div class="card">
+    <h2>Onsager Bridge</h2>
+    <p>System out of equilibrium experiences thermodynamic force x. Entropy production σ = J · x ≥ 0.</p>
+    <p>Descent in information space is the communication channel. Blind spots appear when you force a classification boundary.</p>
+  </div>
+</main>
+<footer>
+  Faith.Emezue Droidspeak · Digital Droid Bridge · Source notes 28/10/2022<br>
+  Absolute Zero remains unattainable.
+</footer>
+<script>
+const pulses = ["COLD.PROBE HOLD // temp-ok","KEEL.TQ LOCK // spec-ok","BUS.HOT HOLD // swarm-10","OPT.SPAR SWEEP // 4mm","SEAL.GRN HOLD // press-ok","WELD.BEAD HOLD // bead-ok","HATCH.SEAL LOCK // press-ok","ATMO.SCRUB CYCLE // ppm-ok"];
+let idx = 0;
+function nextPulse() { idx = (idx + 1) % pulses.length; document.getElementById('pulse').textContent = pulses[idx]; }
+function randomPulse() { idx = Math.floor(Math.random() * pulses.length); document.getElementById('pulse').textContent = pulses[idx]; }
+function updateLab() {
+  const c = +document.getElementById('complex').value;
+  const n = +document.getElementById('noise').value;
+  const p = Math.min(0.99, (c + n) / 200);
+  const H = -(p * Math.log2(p) + (1-p) * Math.log2(1-p));
+  const reaction = Math.round((c * 0.4 + n * 0.8));
+  document.getElementById('entropy').textContent = H.toFixed(2);
+  document.getElementById('reaction').textContent = reaction;
+  document.getElementById('lab-note').textContent = reaction > 60 ? "High pushback. System is reacting. Communication must account for the counter-action." : reaction > 30 ? "Moderate reaction. Isolation is already broken." : "Low reaction. Still not Absolute Zero.";
+}
+updateLab();
+</script>
+</body>
+</html>
