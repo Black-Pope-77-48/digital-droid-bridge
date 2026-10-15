@@ -331,4 +331,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "nest-18",
     shorthand: "DIAL.FILT LOCK // flow-ok",
   },
+  {
+    id: "pulse-settle-batch",
+    title: "Settlement batch hold",
+    vertical: "finance",
+    agentId: "iris-21",
+    shorthand: "SETL.BATCH HOLD // clear-ok",
+  },
 ];
