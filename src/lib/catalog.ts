@@ -338,4 +338,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "SETL.BATCH HOLD // clear-ok",
   },
+  {
+    id: "pulse-grain-dry",
+    title: "Grain dryer hold",
+    vertical: "agrifood",
+    agentId: "nest-18",
+    shorthand: "GRAIN.DRY HOLD // moist-ok",
+  },
 ];

@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-settle-batch",
-    "title": "Settlement batch hold",
-    "shorthand": "SETL.BATCH HOLD // clear-ok",
-    "at": "2026-10-15T07:16:00Z"
+    "id": "pulse-grain-dry",
+    "title": "Grain dryer hold",
+    "shorthand": "GRAIN.DRY HOLD // moist-ok",
+    "at": "2026-10-16T07:14:00Z"
   }
 }
