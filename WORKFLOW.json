@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-grain-dry",
-    "title": "Grain dryer hold",
-    "shorthand": "GRAIN.DRY HOLD // moist-ok",
-    "at": "2026-10-16T07:14:00Z"
+    "id": "pulse-seed-drill",
+    "title": "Seed drill lock",
+    "shorthand": "SEED.DRL LOCK // depth-ok",
+    "at": "2026-10-17T07:15:00Z"
   }
 }
