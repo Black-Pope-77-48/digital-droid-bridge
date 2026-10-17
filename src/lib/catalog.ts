@@ -345,4 +345,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "nest-18",
     shorthand: "GRAIN.DRY HOLD // moist-ok",
   },
+  {
+    id: "pulse-seed-drill",
+    title: "Seed drill lock",
+    vertical: "agrifood",
+    agentId: "haul-03",
+    shorthand: "SEED.DRL LOCK // depth-ok",
+  },
 ];
