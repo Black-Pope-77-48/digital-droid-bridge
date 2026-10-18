@@ -352,4 +352,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "haul-03",
     shorthand: "SEED.DRL LOCK // depth-ok",
   },
+  {
+    id: "pulse-xfmr-tap",
+    title: "Transformer tap lock",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "XFMR.TAP LOCK // volt-ok",
+  },
 ];
