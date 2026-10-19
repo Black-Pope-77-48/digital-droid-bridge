@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-xfmr-tap",
-    "title": "Transformer tap lock",
-    "shorthand": "XFMR.TAP LOCK // volt-ok",
-    "at": "2026-10-18T07:17:00Z"
+    "id": "pulse-valve-act",
+    "title": "Valve actuator lock",
+    "shorthand": "VALVE.ACT LOCK // pos-ok",
+    "at": "2026-10-19T07:14:00Z"
   }
 }

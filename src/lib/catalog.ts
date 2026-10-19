@@ -359,4 +359,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "XFMR.TAP LOCK // volt-ok",
   },
+  {
+    id: "pulse-valve-act",
+    title: "Valve actuator lock",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "VALVE.ACT LOCK // pos-ok",
+  },
 ];
