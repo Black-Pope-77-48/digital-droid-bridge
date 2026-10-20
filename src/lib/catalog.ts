@@ -366,4 +366,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "VALVE.ACT LOCK // pos-ok",
   },
+  {
+    id: "pulse-vent-tidal",
+    title: "Ventilator tidal lock",
+    vertical: "health",
+    agentId: "nest-18",
+    shorthand: "VENT.TID LOCK // vol-ok",
+  },
 ];
