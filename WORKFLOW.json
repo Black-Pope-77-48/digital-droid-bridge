@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-valve-act",
-    "title": "Valve actuator lock",
-    "shorthand": "VALVE.ACT LOCK // pos-ok",
-    "at": "2026-10-19T07:14:00Z"
+    "id": "pulse-vent-tidal",
+    "title": "Ventilator tidal lock",
+    "shorthand": "VENT.TID LOCK // vol-ok",
+    "at": "2026-10-20T07:13:00Z"
   }
 }
