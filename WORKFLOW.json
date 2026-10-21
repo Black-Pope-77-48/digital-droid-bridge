@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-vent-tidal",
-    "title": "Ventilator tidal lock",
-    "shorthand": "VENT.TID LOCK // vol-ok",
-    "at": "2026-10-20T07:13:00Z"
+    "id": "pulse-inverter-sync",
+    "title": "Inverter sync lock",
+    "shorthand": "INV.SYNC LOCK // phase-ok",
+    "at": "2026-10-21T07:15:00Z"
   }
 }

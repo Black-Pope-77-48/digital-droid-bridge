@@ -373,4 +373,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "nest-18",
     shorthand: "VENT.TID LOCK // vol-ok",
   },
+  {
+    id: "pulse-inverter-sync",
+    title: "Inverter sync lock",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "INV.SYNC LOCK // phase-ok",
+  },
 ];
