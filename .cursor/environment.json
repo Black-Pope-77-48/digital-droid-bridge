@@ -1,0 +1,11 @@
+{
+  "name": "Digital Droid Bridge",
+  "install": "set -euo pipefail\nif [[ -f .cursor/install.sh ]]; then bash .cursor/install.sh\nelif [[ -f digital-droid-bridge/.cursor/install.sh ]]; then bash digital-droid-bridge/.cursor/install.sh\nelif [[ -f /workspace/digital-droid-bridge/.cursor/install.sh ]]; then bash /workspace/digital-droid-bridge/.cursor/install.sh\nelif [[ -f /agent/repos/digital-droid-bridge/.cursor/install.sh ]]; then bash /agent/repos/digital-droid-bridge/.cursor/install.sh\nelse echo \"digital-droid-bridge install.sh not found from $(pwd)\" >&2; exit 1\nfi",
+  "start": "set -euo pipefail\nif [[ -f .cursor/start.sh ]]; then bash .cursor/start.sh\nelif [[ -f digital-droid-bridge/.cursor/start.sh ]]; then bash digital-droid-bridge/.cursor/start.sh\nelif [[ -f /workspace/digital-droid-bridge/.cursor/start.sh ]]; then bash /workspace/digital-droid-bridge/.cursor/start.sh\nelif [[ -f /agent/repos/digital-droid-bridge/.cursor/start.sh ]]; then bash /agent/repos/digital-droid-bridge/.cursor/start.sh\nelse echo \"digital-droid-bridge start.sh not found from $(pwd)\" >&2; exit 1\nfi",
+  "ports": [
+    {
+      "name": "droidspeak-lab",
+      "port": 8765
+    }
+  ]
+}
