@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
-# Serve the Droidspeak lab on every boot. Exits 0 once the page responds.
+# Boot the Droidspeak bridge. A prose sentence is not a command: bash runs the
+# first word and exits 127 when that word is not a program.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PORT=8765
 SESSION=droidspeak_lab
-URL="http://127.0.0.1:${PORT}/robot-communicate-lab.html"
+URL="http://127.0.0.1:${PORT}/health"
 
 lab_ready() {
   local body
   body="$(curl -fsS "$URL" 2>/dev/null || true)"
-  [[ "$body" == *"Droidspeak Pulse"* ]]
+  [[ "$body" == *'"bus":"droidspeak"'* ]]
 }
 
 if lab_ready; then
@@ -23,7 +24,7 @@ if tmux has-session -t "$SESSION" 2>/dev/null; then
 fi
 
 tmux new-session -d -s "$SESSION" -c "$ROOT" \
-  "python3 -m http.server ${PORT} --bind 0.0.0.0"
+  "node --experimental-strip-types --import ./bridge/register.mjs ./bridge/agent.mjs"
 
 for _ in $(seq 1 25); do
   if lab_ready; then

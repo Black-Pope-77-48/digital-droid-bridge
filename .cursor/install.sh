@@ -28,11 +28,21 @@ if workflow.get("ticker") != "FAITH":
     raise SystemExit("unexpected ticker")
 if "export function encode" not in protocol or "export function matchJob" not in protocol:
     raise SystemExit("protocol encode/matchJob missing")
-if "Droidspeak Pulse" not in lab:
+if "Droidspeak Pulse" not in lab or "mirrorPulse" not in lab:
     raise SystemExit("robot-communicate-lab.html missing the pulse surface")
 
 print(f"ledger ok: {pulse_id} ticker={workflow['ticker']}")
 PY
+
+node --experimental-strip-types --import ./bridge/register.mjs --input-type=module <<'JS'
+import { lastPulse } from "./src/lib/store.ts";
+import { encode } from "./src/lib/protocol.ts";
+const pulse = lastPulse();
+if (!pulse.shorthand || encode("keel pass complete") !== "KEEL.PASS DONE") {
+  throw new Error("bridge ledger import failed");
+}
+console.log(`bridge ok: ${pulse.id}`);
+JS
 
 # mempool is cloned beside this repo for the shared environment. Its full
 # npm/rust install is intentionally not run here: the default image already

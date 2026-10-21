@@ -42,6 +42,8 @@
     <div id="pulse" class="pulse">COLD.PROBE HOLD // temp-ok</div>
     <button onclick="nextPulse()">Next Pulse</button>
     <button class="secondary" onclick="randomPulse()">Random</button>
+    <button class="secondary" onclick="mirrorPulse()">Mirror</button>
+    <div id="mirror" class="pulse">BUS.IDLE</div>
   </div>
   <div class="card">
     <h2>Entropy & Pushback Lab</h2>
@@ -70,6 +72,24 @@ const pulses = ["COLD.PROBE HOLD // temp-ok","KEEL.TQ LOCK // spec-ok","BUS.HOT 
 let idx = 0;
 function nextPulse() { idx = (idx + 1) % pulses.length; document.getElementById('pulse').textContent = pulses[idx]; }
 function randomPulse() { idx = Math.floor(Math.random() * pulses.length); document.getElementById('pulse').textContent = pulses[idx]; }
+async function mirrorPulse() {
+  const code = document.getElementById('pulse').textContent;
+  const mirror = document.getElementById('mirror');
+  mirror.textContent = "BUS.WAIT";
+  try {
+    const res = await fetch("/flow", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ code: code })
+    });
+    const body = await res.json();
+    const ack = body.mirror && body.mirror.ack ? body.mirror.ack : "NAK // bus";
+    const echoed = body.mirror && body.mirror.code ? body.mirror.code : code;
+    mirror.textContent = ack + " :: " + echoed;
+  } catch (err) {
+    mirror.textContent = "NAK // bus";
+  }
+}
 function updateLab() {
   const c = +document.getElementById('complex').value;
   const n = +document.getElementById('noise').value;
