@@ -1,0 +1,12 @@
+{
+  "bots": [
+    {
+      "name": "Example Scout",
+      "role": "FAKE EXAMPLE. Not a real assistant."
+    }
+  ],
+  "rules": [
+    "FAKE EXAMPLE. Paper notes only.",
+    "Bridge relays and acknowledges. It does not execute trades or payments."
+  ]
+}

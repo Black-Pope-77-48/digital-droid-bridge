@@ -1,0 +1,15 @@
+{
+  "as_of": "2000-01-01T00:00:00Z",
+  "institution": "FAKE EXAMPLE BANK",
+  "accounts": [
+    {
+      "name": "EXAMPLE-0000",
+      "type": "checking",
+      "currency": "XXX",
+      "current_balance": 0,
+      "available_balance": 0
+    }
+  ],
+  "investment_holdings": [],
+  "note": "FAKE EXAMPLE. Not Revolut or Plaid data. investment_holdings stays empty until a real Invest sync exists."
+}

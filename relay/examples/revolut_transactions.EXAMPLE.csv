@@ -1,0 +1,3 @@
+id,account_id,date,amount,direction,currency,name,merchant_name,description,pending,category
+example-in,example-acct,2000-01-01,1.5000,in,XXX,FAKE IN,,,false,"{""primary"":""TRANSFER_IN"",""version"":""v2"",""detailed"":""TRANSFER_IN_OTHER_TRANSFER_IN"",""confidence_level"":""LOW""}"
+example-out,example-acct,2000-01-02,-0.2500,out,XXX,FAKE OUT,,,false,"{""primary"":""GENERAL_MERCHANDISE"",""version"":""v2"",""detailed"":""GENERAL_MERCHANDISE_OTHER"",""confidence_level"":""LOW""}"

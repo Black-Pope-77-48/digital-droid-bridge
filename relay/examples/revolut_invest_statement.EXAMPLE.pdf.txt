@@ -1,0 +1,3 @@
+FAKE EXAMPLE. Not a Revolut export and not a real holding.
+Date,Ticker,Type,Quantity,Price per share,Total Amount,Currency,FX Rate
+2000-01-01,EXAMPLE,BUY - MARKET,3,GBP 10.00,GBP 30.00,GBP,1

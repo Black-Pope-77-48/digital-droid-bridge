@@ -30,6 +30,8 @@ if "export function encode" not in protocol or "export function matchJob" not in
     raise SystemExit("protocol encode/matchJob missing")
 if "Droidspeak Pulse" not in lab or "mirrorPulse" not in lab:
     raise SystemExit("robot-communicate-lab.html missing the pulse surface")
+if 'id="relay"' not in lab:
+    raise SystemExit("robot-communicate-lab.html missing the relay list")
 
 print(f"ledger ok: {pulse_id} ticker={workflow['ticker']}")
 PY
@@ -42,6 +44,25 @@ if (!pulse.shorthand || encode("keel pass complete") !== "KEEL.PASS DONE") {
   throw new Error("bridge ledger import failed");
 }
 console.log(`bridge ok: ${pulse.id}`);
+JS
+
+node --input-type=module <<'JS'
+import { admitFrame } from "./bridge/relay.mjs";
+const admitted = admitFrame(
+  { channel: "invest", code: "INV.HOLD EXAMPLE", data: { callsign: "READ", mode: "read-only" } },
+  { persist: false }
+);
+if (admitted.status !== 200 || admitted.mirror.ack !== "ACK // READ" || admitted.mirror.channel !== "invest") {
+  throw new Error("relay invest admit failed");
+}
+const refused = admitFrame(
+  { channel: "invest", code: "INV.ORDER", data: { action: "buy" } },
+  { persist: false }
+);
+if (refused.ok || refused.ack !== "NAK // relay-only") {
+  throw new Error("relay invest guard failed");
+}
+console.log("relay ok: invest");
 JS
 
 # mempool is cloned beside this repo for the shared environment. Its full

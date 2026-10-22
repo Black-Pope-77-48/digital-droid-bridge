@@ -14,7 +14,7 @@
   main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
   .card { background: var(--card); border-radius: 12px; padding: 1.25rem; margin-bottom: 1.25rem; border: 1px solid #1f2937; }
   h2 { margin-top: 0; font-size: 1.25rem; color: var(--accent); }
-  .pulse { font-family: ui-monospace, monospace; background: #0f172a; padding: 0.75rem 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid var(--accent); }
+  .pulse { font-family: ui-monospace, monospace; background: #0f172a; padding: 0.75rem 1rem; border-radius: 8px; margin: 0.5rem 0; border-left: 3px solid var(--accent); white-space: pre-wrap; }
   button { background: var(--accent); color: #0a0e17; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 600; cursor: pointer; margin-right: 0.5rem; }
   button:hover { filter: brightness(1.1); }
   button.secondary { background: #374151; color: var(--text); }
@@ -58,6 +58,12 @@
     <p id="lab-note" style="margin-top:1rem;color:var(--muted)"></p>
   </div>
   <div class="card">
+    <h2>Relay</h2>
+    <p>bots, forex, finance, invest. Lists code and ack only. The bridge does not trade or move money.</p>
+    <button class="secondary" onclick="loadRelay()">List frames</button>
+    <div id="relay" class="pulse">RELAY.IDLE</div>
+  </div>
+  <div class="card">
     <h2>Onsager Bridge</h2>
     <p>System out of equilibrium experiences thermodynamic force x. Entropy production σ = J · x ≥ 0.</p>
     <p>Descent in information space is the communication channel. Blind spots appear when you force a classification boundary.</p>
@@ -88,6 +94,26 @@ async function mirrorPulse() {
     mirror.textContent = ack + " :: " + echoed;
   } catch (err) {
     mirror.textContent = "NAK // bus";
+  }
+}
+async function loadRelay() {
+  const el = document.getElementById("relay");
+  el.textContent = "RELAY.WAIT";
+  try {
+    const res = await fetch("/relay?limit=5");
+    const body = await res.json();
+    const lines = [];
+    for (const channel of ["bots", "forex", "finance", "invest", "pulse"]) {
+      const frames = (body.frames && body.frames[channel]) || [];
+      if (!frames.length) {
+        lines.push(channel + " :: empty");
+        continue;
+      }
+      for (const frame of frames) lines.push(channel + " " + (frame.code || "") + " " + (frame.ack || ""));
+    }
+    el.textContent = lines.join("\n");
+  } catch (err) {
+    el.textContent = "NAK // relay";
   }
 }
 function updateLab() {

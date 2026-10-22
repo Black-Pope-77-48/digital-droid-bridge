@@ -1,0 +1,3 @@
+ticker_symbol,security_name,security_type,quantity,cost_basis,institution_price,institution_value,currency
+EXAMPLE,FAKE Example Company,equity,2,10.00000000,12.00000000,24.00000000,GBP
+SAMPLE,FAKE Sample Fund,etf,1,5.00000000,4.00000000,4.00000000,GBP

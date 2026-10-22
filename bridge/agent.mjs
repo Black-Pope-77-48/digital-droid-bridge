@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { AGENTS, PULSE_TEMPLATES, PROTOCOL_NAME, RUNTIME, TICKER } from "../src/lib/catalog.ts";
 import { decodeHint, encode, matchJob } from "../src/lib/protocol.ts";
 import { lastPulse } from "../src/lib/store.ts";
+import { admitFrame, listFrames } from "./relay.mjs";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const PORT = Number(process.env.BRIDGE_PORT || 8765);
@@ -40,28 +41,26 @@ function ledgerData(code, extra) {
 }
 
 function admit(input) {
-  const plain = typeof input.plain === "string" ? input.plain : "";
-  const given = typeof input.code === "string" ? input.code.trim() : "";
-  const code = given || encode(plain);
-  const data = ledgerData(code, input.data);
-  const host = { dir: "host", code, data };
-  const mirror = {
-    dir: "mirror",
-    code,
-    data,
-    ack: data.callsign ? `ACK // ${data.callsign}` : "ACK // rx-ok",
-  };
-  frames.push(host, mirror);
+  const result = admitFrame(input, {
+    encode,
+    enrich: (code, extra) => ledgerData(code, extra),
+  });
+  if (!result.ok) return result;
+  frames.push(result.host, result.mirror);
   while (frames.length > MAX_FRAMES) frames.shift();
   return {
-    bus: "droidspeak",
-    protocol: PROTOCOL_NAME,
-    ticker: TICKER,
-    runtime: RUNTIME,
-    code,
-    data,
-    hint: decodeHint(code),
-    mirror,
+    ok: true,
+    status: 200,
+    body: {
+      bus: "droidspeak",
+      protocol: PROTOCOL_NAME,
+      ticker: TICKER,
+      runtime: RUNTIME,
+      code: result.code,
+      data: result.data,
+      hint: decodeHint(result.code),
+      mirror: result.mirror,
+    },
   };
 }
 
@@ -97,6 +96,8 @@ function safeFile(urlPath) {
   let rel = decodeURIComponent(urlPath.split("?")[0]);
   if (rel === "/" || rel === "") rel = "/robot-communicate-lab.html";
   if (rel.includes("\0") || rel.split("/").includes("..")) return null;
+  const relParts = rel.split("/").filter(Boolean);
+  if (relParts[0] === "relay" && relParts[1] === "data") return null;
   const full = normalize(join(ROOT, rel));
   if (full !== ROOT && !full.startsWith(ROOT.endsWith(sep) ? ROOT : ROOT + sep)) return null;
   if (full.split(sep).includes(".git")) return null;
@@ -127,6 +128,17 @@ const server = createServer(async (req, res) => {
       send(res, 200, { bus: "droidspeak", frames });
       return;
     }
+    if (req.method === "GET" && url.pathname === "/relay") {
+      const channel = url.searchParams.get("channel") || undefined;
+      const limit = Number(url.searchParams.get("limit") || 20);
+      const listed = listFrames(channel, limit);
+      if (listed.ack) {
+        send(res, 400, { bus: "droidspeak", code: "NOP", ack: listed.ack });
+        return;
+      }
+      send(res, 200, { bus: "droidspeak", ...listed });
+      return;
+    }
     if (req.method === "POST" && url.pathname === "/flow") {
       const raw = await readBody(req);
       let input = {};
@@ -142,7 +154,12 @@ const server = createServer(async (req, res) => {
         send(res, 400, { bus: "droidspeak", code: "NOP", ack: "NAK // body" });
         return;
       }
-      send(res, 200, admit(input));
+      const admitted = admit(input);
+      if (!admitted.ok) {
+        send(res, admitted.status, { bus: "droidspeak", code: "NOP", ack: admitted.ack });
+        return;
+      }
+      send(res, 200, admitted.body);
       return;
     }
     if (req.method === "GET") {
