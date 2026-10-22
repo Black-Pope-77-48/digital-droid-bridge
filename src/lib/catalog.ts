@@ -380,4 +380,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "INV.SYNC LOCK // phase-ok",
   },
+  {
+    id: "pulse-pipe-clamp",
+    title: "Pipe clamp lock",
+    vertical: "logistics",
+    agentId: "rig-09",
+    shorthand: "PIPE.CLMP LOCK // torque-ok",
+  },
 ];
