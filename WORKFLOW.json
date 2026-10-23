@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-pipe-clamp",
-    "title": "Pipe clamp lock",
-    "shorthand": "PIPE.CLMP LOCK // torque-ok",
-    "at": "2026-10-22T07:13:00Z"
+    "id": "pulse-winch-brake",
+    "title": "Winch brake lock",
+    "shorthand": "WINCH.BRK LOCK // hold-ok",
+    "at": "2026-10-23T07:14:00Z"
   }
 }

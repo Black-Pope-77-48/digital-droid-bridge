@@ -387,4 +387,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "rig-09",
     shorthand: "PIPE.CLMP LOCK // torque-ok",
   },
+  {
+    id: "pulse-winch-brake",
+    title: "Winch brake lock",
+    vertical: "maritime",
+    agentId: "rig-09",
+    shorthand: "WINCH.BRK LOCK // hold-ok",
+  },
 ];
