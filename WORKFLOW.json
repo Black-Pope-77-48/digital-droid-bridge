@@ -18,9 +18,9 @@
     "ledgerAlias": ["catalog.ts", "protocol.ts", "TOKENOMICS.json"]
   },
   "lastPulse": {
-    "id": "pulse-winch-brake",
-    "title": "Winch brake lock",
-    "shorthand": "WINCH.BRK LOCK // hold-ok",
-    "at": "2026-10-23T07:14:00Z"
+    "id": "pulse-breaker-trip",
+    "title": "Breaker trip lock",
+    "shorthand": "BRKR.TRIP LOCK // open-ok",
+    "at": "2026-10-24T07:14:00Z"
   }
 }
