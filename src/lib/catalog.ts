@@ -394,4 +394,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "rig-09",
     shorthand: "WINCH.BRK LOCK // hold-ok",
   },
+  {
+    id: "pulse-breaker-trip",
+    title: "Breaker trip lock",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "BRKR.TRIP LOCK // open-ok",
+  },
 ];
