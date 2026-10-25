@@ -10,7 +10,7 @@ export const VERTICAL_HINTS: Record<Vertical, string[]> = {
   media: ["feed", "cast", "cut", "studio", "air", "cue", "slate"],
   legal: ["clause", "file", "hold", "claim", "docket"],
   climate: ["press", "atmo", "seal", "stack", "opacity"],
-  compute: ["opt", "scan", "sync", "wafer", "etch", "probe", "card", "mask"],
+  compute: ["opt", "scan", "sync", "wafer", "etch", "probe", "card", "mask", "fan", "tray"],
   maritime: ["berth", "hull", "tide", "strake", "fair", "shaft", "align", "hatch", "winch", "brake"],
   agrifood: ["yield", "silo", "lot", "valve", "irrig", "cold", "probe", "grain", "dryer", "seed", "drill"],
 };
