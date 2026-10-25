@@ -1,0 +1,97 @@
+name: pulse ledger
+
+# The daily trainer is an outside automation. It commits to main as the repo
+# owner and rewrites lastPulse in WORKFLOW.json. It does not write pulse.json.
+# This workflow republishes the watch file from commit history and issue #1.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "WORKFLOW.json"
+      - "src/lib/catalog.ts"
+      - "pulse.json"
+      - "scripts/sync-pulse.mjs"
+      - "scripts/pulse-ledger.mjs"
+      - "scripts/pulse-ledger.test.mjs"
+      - ".github/workflows/pulse-sync.yml"
+  pull_request:
+    paths:
+      - "WORKFLOW.json"
+      - "src/lib/catalog.ts"
+      - "pulse.json"
+      - "scripts/sync-pulse.mjs"
+      - "scripts/pulse-ledger.mjs"
+      - "scripts/pulse-ledger.test.mjs"
+      - ".github/workflows/pulse-sync.yml"
+      - "docs/pulse-contract.md"
+  schedule:
+    # The trainer lands around 08:15 Europe/London: 07:15 UTC in BST and
+    # 08:15 UTC in GMT. Both runs are idempotent.
+    - cron: "30 7,8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse-ledger
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test pulse rules
+        run: node --test scripts/pulse-ledger.test.mjs
+      - name: Check the published ledger
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/sync-pulse.mjs --check
+
+  sync:
+    if: github.event_name != 'pull_request' && github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test pulse rules
+        run: node --test scripts/pulse-ledger.test.mjs
+      - name: Sync and push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git checkout -B main origin/main
+            node scripts/sync-pulse.mjs
+            git add -- WORKFLOW.json pulse.json
+            if git diff --cached --quiet; then
+              echo "pulse ledger already in sync"
+              exit 0
+            fi
+            git commit -m "Sync vertical last-seen times into pulse.json"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "push raced, retrying ($attempt)"
+            sleep $((attempt * 2))
+          done
+          echo "failed to push pulse ledger" >&2
+          exit 1

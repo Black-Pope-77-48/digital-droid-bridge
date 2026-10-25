@@ -22,5 +22,19 @@
     "title": "Fan tray seat",
     "shorthand": "FAN.TRAY SEAT // rpm-ok",
     "at": "2026-10-25T08:13:00Z"
+  },
+  "verticals": {
+    "orbital": "2026-10-05T07:16:00Z",
+    "energy": "2026-10-24T07:14:00Z",
+    "health": "2026-10-20T07:13:00Z",
+    "logistics": "2026-10-22T07:13:00Z",
+    "finance": "2026-10-15T07:16:00Z",
+    "civic": "2026-10-01T07:11:00Z",
+    "media": "2026-10-04T07:16:00Z",
+    "legal": "2026-10-02T07:18:00Z",
+    "climate": "2026-09-30T07:12:00Z",
+    "compute": "2026-10-25T08:13:00Z",
+    "maritime": "2026-10-23T07:14:00Z",
+    "agrifood": "2026-10-17T07:15:00Z"
   }
 }
