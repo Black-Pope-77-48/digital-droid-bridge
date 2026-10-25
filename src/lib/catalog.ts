@@ -401,4 +401,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "BRKR.TRIP LOCK // open-ok",
   },
+  {
+    id: "pulse-fan-tray",
+    title: "Fan tray seat",
+    vertical: "compute",
+    agentId: "iris-21",
+    shorthand: "FAN.TRAY SEAT // rpm-ok",
+  },
 ];
