@@ -36,3 +36,9 @@ node --experimental-strip-types --import ./bridge/register.mjs ./bridge/agent.mj
 node relay/ingest.mjs --roster roster.json --forex daily.md --snapshot snapshot.json --transactions tx.csv --invest-plaid holdings.csv
 node relay/list.mjs
 ```
+
+## Lessons
+
+`BAY: STUDY`
+
+The lesson index is [`docs/lessons/README.md`](docs/lessons/README.md). It points at a private study repo, and those links work only for the owner. Lesson notes and code stay in that repo. Lesson 06 is planned and not yet built.
