@@ -408,4 +408,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "FAN.TRAY SEAT // rpm-ok",
   },
+  {
+    id: "pulse-cool-spray",
+    title: "Cooling spray lock",
+    vertical: "climate",
+    agentId: "kite-07",
+    shorthand: "COOL.SPRAY LOCK // flow-ok",
+  },
 ];
