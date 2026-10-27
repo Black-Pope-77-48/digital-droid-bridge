@@ -415,4 +415,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "COOL.SPRAY LOCK // flow-ok",
   },
+  {
+    id: "pulse-ecg-lead",
+    title: "ECG lead lock",
+    vertical: "health",
+    agentId: "nest-18",
+    shorthand: "ECG.LEAD LOCK // trace-ok",
+  },
 ];
