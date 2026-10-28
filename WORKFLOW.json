@@ -1,1 +1,30 @@
-PLACEHOLDER_WORKFLOW
+{
+  "name": "Digital Droid Bridge",
+  "protocol": "Faith.Emezue Droidspeak",
+  "ticker": "FAITH",
+  "runtime": "Digital Droid Bridge",
+  "github": "Black-Pope-77-48/digital-droid-bridge",
+  "automation": "Faith.Emezue Droidspeak trainer",
+  "cadence": "RRULE:FREQ=DAILY",
+  "timeOfDay": "08:00",
+  "timezone": "Europe/London",
+  "savedAt": "2026-09-15T09:32:00Z",
+  "paths": {
+    "catalog": "src/lib/catalog.ts",
+    "protocol": "src/lib/protocol.ts",
+    "store": "src/lib/store.ts",
+    "train": "src/routes/train.tsx",
+    "tokenomics": "TOKENOMICS.json",
+    "ledgerAlias": [
+      "catalog.ts",
+      "protocol.ts",
+      "TOKENOMICS.json"
+    ]
+  },
+  "lastPulse": {
+    "id": "pulse-sort-gate",
+    "title": "Sorter gate lock",
+    "shorthand": "SORT.GATE LOCK // divert-ok",
+    "at": "2026-10-28T08:13:00Z"
+  }
+}
