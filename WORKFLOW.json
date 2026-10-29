@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-sort-gate",
-    "title": "Sorter gate lock",
-    "shorthand": "SORT.GATE LOCK // divert-ok",
-    "at": "2026-10-28T08:13:00Z"
+    "id": "pulse-bag-filt",
+    "title": "Baghouse filter lock",
+    "shorthand": "BAG.FILT LOCK // dust-ok",
+    "at": "2026-10-29T08:18:00Z"
   }
 }

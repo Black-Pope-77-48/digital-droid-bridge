@@ -429,4 +429,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "haul-03",
     shorthand: "SORT.GATE LOCK // divert-ok",
   },
+  {
+    id: "pulse-bag-filt",
+    title: "Baghouse filter lock",
+    vertical: "climate",
+    agentId: "kite-07",
+    shorthand: "BAG.FILT LOCK // dust-ok",
+  },
 ];
