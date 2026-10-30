@@ -83,3 +83,5 @@ done
 if [[ "$found_mempool" -eq 0 ]]; then
   echo "mempool checkout not beside this repo; bridge ledger check still applies"
 fi
+
+node scripts/sync-pulse.mjs --check

@@ -1,0 +1,60 @@
+# The trainer commits lastPulse from outside this repo. This workflow runs
+# after that push so WORKFLOW.json verticals and pulse.json stay aligned even
+# when the trainer does not know about the watch file.
+
+name: Sync pulse verticals
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - WORKFLOW.json
+      - pulse.json
+      - src/lib/catalog.ts
+      - scripts/sync-pulse.mjs
+      - scripts/sync-pulse.test.mjs
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse-sync-main
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Test the sync script
+        run: node --test scripts/sync-pulse.test.mjs
+
+      - name: Advance the vertical for lastPulse
+        run: node scripts/sync-pulse.mjs
+
+      - name: Commit when a vertical moved
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add WORKFLOW.json pulse.json
+          if git diff --cached --quiet; then
+            echo "pulse files already match lastPulse"
+            exit 0
+          fi
+          git commit -m "pulse: sync vertical last-seen"
+          if git push origin HEAD:main; then
+            exit 0
+          fi
+          git pull --rebase origin main
+          node scripts/sync-pulse.mjs
+          git add WORKFLOW.json pulse.json
+          if ! git diff --cached --quiet; then
+            git commit -m "pulse: sync vertical last-seen"
+          fi
+          git push origin HEAD:main

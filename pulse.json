@@ -1,0 +1,23 @@
+{
+  "windowDays": 7,
+  "updatedAt": "2026-10-30T15:14:45.316Z",
+  "lastPulse": {
+    "id": "pulse-boom-mic",
+    "shorthand": "BOOM.MIC LOCK // gain-ok",
+    "at": "2026-10-30T08:18:00Z"
+  },
+  "verticals": {
+    "orbital": "2026-10-05T07:18:16Z",
+    "energy": "2026-10-24T07:14:43Z",
+    "health": "2026-10-27T08:15:26Z",
+    "logistics": "2026-10-28T08:15:03Z",
+    "finance": "2026-10-15T07:16:08Z",
+    "civic": "2026-10-01T07:12:45Z",
+    "media": "2026-10-30T08:20:15Z",
+    "legal": "2026-10-02T07:18:20Z",
+    "climate": "2026-10-29T08:18:19Z",
+    "compute": "2026-10-25T08:15:27Z",
+    "maritime": "2026-10-23T07:16:21Z",
+    "agrifood": "2026-10-17T07:16:27Z"
+  }
+}
