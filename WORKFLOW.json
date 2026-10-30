@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-bag-filt",
-    "title": "Baghouse filter lock",
-    "shorthand": "BAG.FILT LOCK // dust-ok",
-    "at": "2026-10-29T08:18:00Z"
+    "id": "pulse-boom-mic",
+    "title": "Boom mic lock",
+    "shorthand": "BOOM.MIC LOCK // gain-ok",
+    "at": "2026-10-30T08:18:00Z"
   }
 }

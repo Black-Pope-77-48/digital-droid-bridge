@@ -436,4 +436,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "BAG.FILT LOCK // dust-ok",
   },
+  {
+    id: "pulse-boom-mic",
+    title: "Boom mic lock",
+    vertical: "media",
+    agentId: "drift-33",
+    shorthand: "BOOM.MIC LOCK // gain-ok",
+  },
 ];
