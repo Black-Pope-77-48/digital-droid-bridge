@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-boom-mic",
-    "title": "Boom mic lock",
-    "shorthand": "BOOM.MIC LOCK // gain-ok",
-    "at": "2026-10-30T08:18:00Z"
+    "id": "pulse-mri-mag",
+    "title": "MRI magnet hold",
+    "shorthand": "MRI.MAG HOLD // field-ok",
+    "at": "2026-10-31T08:17:00Z"
   }
 }
