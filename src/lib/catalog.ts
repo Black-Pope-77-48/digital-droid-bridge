@@ -443,4 +443,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "drift-33",
     shorthand: "BOOM.MIC LOCK // gain-ok",
   },
+  {
+    id: "pulse-mri-mag",
+    title: "MRI magnet hold",
+    vertical: "health",
+    agentId: "iris-21",
+    shorthand: "MRI.MAG HOLD // field-ok",
+  },
 ];
