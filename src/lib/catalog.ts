@@ -450,4 +450,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "MRI.MAG HOLD // field-ok",
   },
+  {
+    id: "pulse-press-brk",
+    title: "Press brake lock",
+    vertical: "logistics",
+    agentId: "forge-44",
+    shorthand: "PRESS.BRK LOCK // angle-ok",
+  },
 ];

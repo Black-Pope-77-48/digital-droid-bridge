@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-mri-mag",
-    "title": "MRI magnet hold",
-    "shorthand": "MRI.MAG HOLD // field-ok",
-    "at": "2026-10-31T08:17:00Z"
+    "id": "pulse-press-brk",
+    "title": "Press brake lock",
+    "shorthand": "PRESS.BRK LOCK // angle-ok",
+    "at": "2026-11-01T08:17:00Z"
   }
 }
