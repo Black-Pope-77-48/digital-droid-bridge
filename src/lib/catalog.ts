@@ -457,4 +457,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "forge-44",
     shorthand: "PRESS.BRK LOCK // angle-ok",
   },
+  {
+    id: "pulse-relay-cont",
+    title: "Relay contact lock",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "RELAY.CONT LOCK // make-ok",
+  },
 ];
