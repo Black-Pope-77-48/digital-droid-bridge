@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-press-brk",
-    "title": "Press brake lock",
-    "shorthand": "PRESS.BRK LOCK // angle-ok",
-    "at": "2026-11-01T08:17:00Z"
+    "id": "pulse-relay-cont",
+    "title": "Relay contact lock",
+    "shorthand": "RELAY.CONT LOCK // make-ok",
+    "at": "2026-11-02T08:20:00Z"
   }
 }
