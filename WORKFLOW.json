@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-relay-cont",
-    "title": "Relay contact lock",
-    "shorthand": "RELAY.CONT LOCK // make-ok",
-    "at": "2026-11-02T08:20:00Z"
+    "id": "pulse-roller-conv",
+    "title": "Roller conveyor lock",
+    "shorthand": "ROLL.CONV LOCK // speed-ok",
+    "at": "2026-11-03T08:17:00Z"
   }
 }
