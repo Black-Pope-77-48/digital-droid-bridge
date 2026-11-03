@@ -464,4 +464,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "RELAY.CONT LOCK // make-ok",
   },
+  {
+    id: "pulse-roller-conv",
+    title: "Roller conveyor lock",
+    vertical: "logistics",
+    agentId: "haul-03",
+    shorthand: "ROLL.CONV LOCK // speed-ok",
+  },
 ];
