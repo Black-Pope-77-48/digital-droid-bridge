@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-roller-conv",
-    "title": "Roller conveyor lock",
-    "shorthand": "ROLL.CONV LOCK // speed-ok",
-    "at": "2026-11-03T08:17:00Z"
+    "id": "pulse-anchor-chain",
+    "title": "Anchor chain lock",
+    "shorthand": "ANCH.CHN LOCK // tension-ok",
+    "at": "2026-11-04T08:18:00Z"
   }
 }
