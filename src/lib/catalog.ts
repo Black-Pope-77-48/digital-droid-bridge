@@ -471,4 +471,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "haul-03",
     shorthand: "ROLL.CONV LOCK // speed-ok",
   },
+  {
+    id: "pulse-anchor-chain",
+    title: "Anchor chain lock",
+    vertical: "maritime",
+    agentId: "anchor-01",
+    shorthand: "ANCH.CHN LOCK // tension-ok",
+  },
 ];
