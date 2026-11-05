@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-anchor-chain",
-    "title": "Anchor chain lock",
-    "shorthand": "ANCH.CHN LOCK // tension-ok",
-    "at": "2026-11-04T08:18:00Z"
+    "id": "pulse-cap-bank",
+    "title": "Capacitor bank lock",
+    "shorthand": "CAP.BANK LOCK // charge-ok",
+    "at": "2026-11-05T08:18:00Z"
   }
 }
