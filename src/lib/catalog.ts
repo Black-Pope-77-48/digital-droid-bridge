@@ -478,4 +478,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "anchor-01",
     shorthand: "ANCH.CHN LOCK // tension-ok",
   },
+  {
+    id: "pulse-cap-bank",
+    title: "Capacitor bank lock",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "CAP.BANK LOCK // charge-ok",
+  },
 ];
