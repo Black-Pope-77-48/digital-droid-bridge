@@ -485,4 +485,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "CAP.BANK LOCK // charge-ok",
   },
+  {
+    id: "pulse-gimbal-seat",
+    title: "Thruster gimbal seat",
+    vertical: "orbital",
+    agentId: "spar-12",
+    shorthand: "THR.GIMB SEAT // align-ok",
+  },
 ];

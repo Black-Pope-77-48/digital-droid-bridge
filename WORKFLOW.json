@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-cap-bank",
-    "title": "Capacitor bank lock",
-    "shorthand": "CAP.BANK LOCK // charge-ok",
-    "at": "2026-11-05T08:18:00Z"
+    "id": "pulse-gimbal-seat",
+    "title": "Thruster gimbal seat",
+    "shorthand": "THR.GIMB SEAT // align-ok",
+    "at": "2026-11-06T08:20:00Z"
   }
 }
