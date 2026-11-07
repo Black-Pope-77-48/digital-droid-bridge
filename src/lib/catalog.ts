@@ -492,4 +492,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "spar-12",
     shorthand: "THR.GIMB SEAT // align-ok",
   },
+  {
+    id: "pulse-flue-scrub",
+    title: "Flue gas scrub hold",
+    vertical: "climate",
+    agentId: "kite-07",
+    shorthand: "FLUE.SCRUB HOLD // sox-ok",
+  },
 ];
