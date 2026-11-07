@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-gimbal-seat",
-    "title": "Thruster gimbal seat",
-    "shorthand": "THR.GIMB SEAT // align-ok",
-    "at": "2026-11-06T08:20:00Z"
+    "id": "pulse-flue-scrub",
+    "title": "Flue gas scrub hold",
+    "shorthand": "FLUE.SCRUB HOLD // sox-ok",
+    "at": "2026-11-07T08:20:00Z"
   }
 }
