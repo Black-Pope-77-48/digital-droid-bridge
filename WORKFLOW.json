@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-flue-scrub",
-    "title": "Flue gas scrub hold",
-    "shorthand": "FLUE.SCRUB HOLD // sox-ok",
-    "at": "2026-11-07T08:20:00Z"
+    "id": "pulse-furnace-temp",
+    "title": "Furnace temp hold",
+    "shorthand": "FURN.TEMP HOLD // deg-ok",
+    "at": "2026-11-08T08:19:00Z"
   }
 }

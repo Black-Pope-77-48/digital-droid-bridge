@@ -499,4 +499,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "FLUE.SCRUB HOLD // sox-ok",
   },
+  {
+    id: "pulse-furnace-temp",
+    title: "Furnace temp hold",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "FURN.TEMP HOLD // deg-ok",
+  },
 ];
