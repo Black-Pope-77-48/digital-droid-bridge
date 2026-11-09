@@ -506,4 +506,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "FURN.TEMP HOLD // deg-ok",
   },
+  {
+    id: "pulse-rack-mount",
+    title: "Server rack mount",
+    vertical: "compute",
+    agentId: "iris-21",
+    shorthand: "RACK.MNT SEAT // u-ok",
+  },
 ];

@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-furnace-temp",
-    "title": "Furnace temp hold",
-    "shorthand": "FURN.TEMP HOLD // deg-ok",
-    "at": "2026-11-08T08:19:00Z"
+    "id": "pulse-rack-mount",
+    "title": "Server rack mount",
+    "shorthand": "RACK.MNT SEAT // u-ok",
+    "at": "2026-11-09T08:23:00Z"
   }
 }
