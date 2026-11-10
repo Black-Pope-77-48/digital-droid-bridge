@@ -513,4 +513,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "RACK.MNT SEAT // u-ok",
   },
+  {
+    id: "pulse-hvac-damp",
+    title: "HVAC damper lock",
+    vertical: "climate",
+    agentId: "kite-07",
+    shorthand: "HVAC.DAMP LOCK // pos-ok",
+  },
 ];
