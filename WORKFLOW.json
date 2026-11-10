@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-rack-mount",
-    "title": "Server rack mount",
-    "shorthand": "RACK.MNT SEAT // u-ok",
-    "at": "2026-11-09T08:23:00Z"
+    "id": "pulse-hvac-damp",
+    "title": "HVAC damper lock",
+    "shorthand": "HVAC.DAMP LOCK // pos-ok",
+    "at": "2026-11-10T08:20:00Z"
   }
 }
