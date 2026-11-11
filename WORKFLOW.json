@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-hvac-damp",
-    "title": "HVAC damper lock",
-    "shorthand": "HVAC.DAMP LOCK // pos-ok",
-    "at": "2026-11-10T08:20:00Z"
+    "id": "pulse-wire-conf",
+    "title": "Wire confirm lock",
+    "shorthand": "WIRE.CONF LOCK // auth-ok",
+    "at": "2026-11-11T08:20:00Z"
   }
 }

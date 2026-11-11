@@ -520,4 +520,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "HVAC.DAMP LOCK // pos-ok",
   },
+  {
+    id: "pulse-wire-conf",
+    title: "Wire confirm lock",
+    vertical: "finance",
+    agentId: "iris-21",
+    shorthand: "WIRE.CONF LOCK // auth-ok",
+  },
 ];
