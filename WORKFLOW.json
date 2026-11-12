@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-wire-conf",
-    "title": "Wire confirm lock",
-    "shorthand": "WIRE.CONF LOCK // auth-ok",
-    "at": "2026-11-11T08:20:00Z"
+    "id": "pulse-zone-stamp",
+    "title": "Zoning stamp hold",
+    "shorthand": "ZONE.STAMP HOLD // seal-ok",
+    "at": "2026-11-12T08:19:00Z"
   }
 }
