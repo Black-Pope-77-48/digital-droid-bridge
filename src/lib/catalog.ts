@@ -527,4 +527,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "WIRE.CONF LOCK // auth-ok",
   },
+  {
+    id: "pulse-zone-stamp",
+    title: "Zoning stamp hold",
+    vertical: "civic",
+    agentId: "kite-07",
+    shorthand: "ZONE.STAMP HOLD // seal-ok",
+  },
 ];
