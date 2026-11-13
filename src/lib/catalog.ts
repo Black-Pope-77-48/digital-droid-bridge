@@ -534,4 +534,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "ZONE.STAMP HOLD // seal-ok",
   },
+  {
+    id: "pulse-bilge-pump",
+    title: "Bilge pump lock",
+    vertical: "maritime",
+    agentId: "anchor-01",
+    shorthand: "BILGE.PMP LOCK // level-ok",
+  },
 ];
