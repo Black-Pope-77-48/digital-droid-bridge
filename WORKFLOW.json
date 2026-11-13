@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-zone-stamp",
-    "title": "Zoning stamp hold",
-    "shorthand": "ZONE.STAMP HOLD // seal-ok",
-    "at": "2026-11-12T08:19:00Z"
+    "id": "pulse-bilge-pump",
+    "title": "Bilge pump lock",
+    "shorthand": "BILGE.PMP LOCK // level-ok",
+    "at": "2026-11-13T08:19:00Z"
   }
 }
