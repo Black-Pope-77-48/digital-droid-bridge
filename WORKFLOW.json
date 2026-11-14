@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-bilge-pump",
-    "title": "Bilge pump lock",
-    "shorthand": "BILGE.PMP LOCK // level-ok",
-    "at": "2026-11-13T08:19:00Z"
+    "id": "pulse-laser-align",
+    "title": "Laser align hold",
+    "shorthand": "LAS.ALN HOLD // spot-ok",
+    "at": "2026-11-14T08:21:05Z"
   }
 }
