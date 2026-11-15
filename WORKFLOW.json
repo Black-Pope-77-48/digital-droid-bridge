@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-laser-align",
-    "title": "Laser align hold",
-    "shorthand": "LAS.ALN HOLD // spot-ok",
-    "at": "2026-11-14T08:21:05Z"
+    "id": "pulse-pallet-stack",
+    "title": "Pallet stack lock",
+    "shorthand": "PALL.STACK LOCK // height-ok",
+    "at": "2026-11-15T08:19:00Z"
   }
 }
