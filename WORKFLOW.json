@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-pallet-stack",
-    "title": "Pallet stack lock",
-    "shorthand": "PALL.STACK LOCK // height-ok",
-    "at": "2026-11-15T08:19:00Z"
+    "id": "pulse-combine-head",
+    "title": "Combine header lock",
+    "shorthand": "COMB.HEAD LOCK // height-ok",
+    "at": "2026-11-16T08:22:00Z"
   }
 }

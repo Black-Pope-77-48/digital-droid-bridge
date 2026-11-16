@@ -555,4 +555,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "haul-03",
     shorthand: "PALL.STACK LOCK // height-ok",
   },
+  {
+    id: "pulse-combine-head",
+    title: "Combine header lock",
+    vertical: "agrifood",
+    agentId: "haul-03",
+    shorthand: "COMB.HEAD LOCK // height-ok",
+  },
 ];
