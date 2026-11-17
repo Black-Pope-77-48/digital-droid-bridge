@@ -562,4 +562,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "haul-03",
     shorthand: "COMB.HEAD LOCK // height-ok",
   },
+  {
+    id: "pulse-ballast-trim",
+    title: "Ballast trim lock",
+    vertical: "maritime",
+    agentId: "anchor-01",
+    shorthand: "BALL.TRIM LOCK // level-ok",
+  },
 ];

@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-combine-head",
-    "title": "Combine header lock",
-    "shorthand": "COMB.HEAD LOCK // height-ok",
-    "at": "2026-11-16T08:22:00Z"
+    "id": "pulse-ballast-trim",
+    "title": "Ballast trim lock",
+    "shorthand": "BALL.TRIM LOCK // level-ok",
+    "at": "2026-11-17T08:24:00Z"
   }
 }
