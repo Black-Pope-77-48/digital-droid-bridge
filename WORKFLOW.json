@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-ballast-trim",
-    "title": "Ballast trim lock",
-    "shorthand": "BALL.TRIM LOCK // level-ok",
-    "at": "2026-11-17T08:24:00Z"
+    "id": "pulse-vac-chamb",
+    "title": "Vacuum chamber hold",
+    "shorthand": "VAC.CHAMB HOLD // mbar-ok",
+    "at": "2026-11-18T08:25:00Z"
   }
 }
