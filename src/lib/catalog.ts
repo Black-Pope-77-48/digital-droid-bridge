@@ -569,4 +569,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "anchor-01",
     shorthand: "BALL.TRIM LOCK // level-ok",
   },
+  {
+    id: "pulse-vac-chamb",
+    title: "Vacuum chamber hold",
+    vertical: "compute",
+    agentId: "iris-21",
+    shorthand: "VAC.CHAMB HOLD // mbar-ok",
+  },
 ];
