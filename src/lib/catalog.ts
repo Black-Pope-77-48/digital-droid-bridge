@@ -576,4 +576,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "VAC.CHAMB HOLD // mbar-ok",
   },
+  {
+    id: "pulse-ct-fan",
+    title: "Cooling tower fan lock",
+    vertical: "climate",
+    agentId: "kite-07",
+    shorthand: "CT.FAN LOCK // rpm-ok",
+  },
 ];

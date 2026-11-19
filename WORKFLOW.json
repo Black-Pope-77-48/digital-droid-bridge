@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-vac-chamb",
-    "title": "Vacuum chamber hold",
-    "shorthand": "VAC.CHAMB HOLD // mbar-ok",
-    "at": "2026-11-18T08:25:00Z"
+    "id": "pulse-ct-fan",
+    "title": "Cooling tower fan lock",
+    "shorthand": "CT.FAN LOCK // rpm-ok",
+    "at": "2026-11-19T08:19:00Z"
   }
 }
