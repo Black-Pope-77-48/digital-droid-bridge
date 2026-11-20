@@ -583,4 +583,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "CT.FAN LOCK // rpm-ok",
   },
+  {
+    id: "pulse-agv-path",
+    title: "AGV path lock",
+    vertical: "logistics",
+    agentId: "haul-03",
+    shorthand: "AGV.PATH LOCK // route-ok",
+  },
 ];

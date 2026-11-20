@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-ct-fan",
-    "title": "Cooling tower fan lock",
-    "shorthand": "CT.FAN LOCK // rpm-ok",
-    "at": "2026-11-19T08:19:00Z"
+    "id": "pulse-agv-path",
+    "title": "AGV path lock",
+    "shorthand": "AGV.PATH LOCK // route-ok",
+    "at": "2026-11-20T08:18:00Z"
   }
 }

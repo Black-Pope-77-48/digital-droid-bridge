@@ -4,7 +4,7 @@ export const VERTICAL_HINTS: Record<Vertical, string[]> = {
   orbital: ["keel", "ring", "lattice", "spine", "seal", "weld", "bead", "gimbal", "thruster"],
   energy: ["solar", "grid", "bus", "hinge", "batt", "pack", "turb", "pitch", "switchgear", "transformer", "tap", "valve", "act", "inverter", "sync", "breaker", "trip", "relay", "cap", "bank", "furnace"],
   health: ["vitals", "med", "triage", "infusion", "pump", "sterile", "radio", "dose", "dial", "filt", "vent", "tidal", "ecg", "lead", "mri", "magnet"],
-  logistics: ["haul", "dock", "vector", "beam", "belt", "crane", "boom", "pallet", "wrap", "fork", "mast", "pipe", "clamp", "sort", "gate", "press", "brake", "roller", "conveyor", "stack"],
+  logistics: ["haul", "dock", "vector", "beam", "belt", "crane", "boom", "pallet", "wrap", "fork", "mast", "pipe", "clamp", "sort", "gate", "press", "brake", "roller", "conveyor", "stack", "agv", "path"],
   finance: ["clear", "settle", "ledger", "recon", "nostro", "balance", "batch", "wire", "confirm"],
   civic: ["yard", "permit", "control", "queue", "stamp", "zone"],
   media: ["feed", "cast", "cut", "studio", "air", "cue", "slate", "boom", "mic"],
