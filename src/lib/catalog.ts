@@ -590,4 +590,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "haul-03",
     shorthand: "AGV.PATH LOCK // route-ok",
   },
+  {
+    id: "pulse-scada-tag",
+    title: "SCADA tag lock",
+    vertical: "energy",
+    agentId: "arc-02",
+    shorthand: "SCADA.TAG LOCK // point-ok",
+  },
 ];

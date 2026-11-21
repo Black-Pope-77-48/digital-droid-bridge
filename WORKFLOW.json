@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-agv-path",
-    "title": "AGV path lock",
-    "shorthand": "AGV.PATH LOCK // route-ok",
-    "at": "2026-11-20T08:18:00Z"
+    "id": "pulse-scada-tag",
+    "title": "SCADA tag lock",
+    "shorthand": "SCADA.TAG LOCK // point-ok",
+    "at": "2026-11-21T08:20:00Z"
   }
 }
