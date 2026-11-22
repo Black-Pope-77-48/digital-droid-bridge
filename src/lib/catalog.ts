@@ -597,4 +597,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "arc-02",
     shorthand: "SCADA.TAG LOCK // point-ok",
   },
+  {
+    id: "pulse-water-main",
+    title: "Water main lock",
+    vertical: "civic",
+    agentId: "kite-07",
+    shorthand: "WTR.MAIN LOCK // press-ok",
+  },
 ];
