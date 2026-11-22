@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-scada-tag",
-    "title": "SCADA tag lock",
-    "shorthand": "SCADA.TAG LOCK // point-ok",
-    "at": "2026-11-21T08:20:00Z"
+    "id": "pulse-water-main",
+    "title": "Water main lock",
+    "shorthand": "WTR.MAIN LOCK // press-ok",
+    "at": "2026-11-22T08:20:00Z"
   }
 }
