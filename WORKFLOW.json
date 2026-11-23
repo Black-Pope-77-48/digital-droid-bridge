@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-water-main",
-    "title": "Water main lock",
-    "shorthand": "WTR.MAIN LOCK // press-ok",
-    "at": "2026-11-22T08:20:00Z"
+    "id": "pulse-pharm-vial",
+    "title": "Pharma vial lock",
+    "shorthand": "PHARM.VIAL LOCK // seal-ok",
+    "at": "2026-11-23T08:21:00Z"
   }
 }
