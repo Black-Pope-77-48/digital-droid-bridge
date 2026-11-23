@@ -604,4 +604,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "kite-07",
     shorthand: "WTR.MAIN LOCK // press-ok",
   },
+  {
+    id: "pulse-pharm-vial",
+    title: "Pharma vial lock",
+    vertical: "health",
+    agentId: "nest-18",
+    shorthand: "PHARM.VIAL LOCK // seal-ok",
+  },
 ];
