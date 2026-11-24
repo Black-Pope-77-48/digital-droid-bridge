@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-pharm-vial",
-    "title": "Pharma vial lock",
-    "shorthand": "PHARM.VIAL LOCK // seal-ok",
-    "at": "2026-11-23T08:21:00Z"
+    "id": "pulse-auto-clav",
+    "title": "Autoclave cycle hold",
+    "shorthand": "AUTO.CLAV HOLD // steam-ok",
+    "at": "2026-11-24T08:22:00Z"
   }
 }
