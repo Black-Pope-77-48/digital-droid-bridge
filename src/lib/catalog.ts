@@ -611,4 +611,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "nest-18",
     shorthand: "PHARM.VIAL LOCK // seal-ok",
   },
+  {
+    id: "pulse-auto-clav",
+    title: "Autoclave cycle hold",
+    vertical: "health",
+    agentId: "nest-18",
+    shorthand: "AUTO.CLAV HOLD // steam-ok",
+  },
 ];
