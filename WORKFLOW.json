@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-auto-clav",
-    "title": "Autoclave cycle hold",
-    "shorthand": "AUTO.CLAV HOLD // steam-ok",
-    "at": "2026-11-24T08:22:00Z"
+    "id": "pulse-rad-alt",
+    "title": "Radar altimeter lock",
+    "shorthand": "RAD.ALT LOCK // height-ok",
+    "at": "2026-11-25T08:19:00Z"
   }
 }
