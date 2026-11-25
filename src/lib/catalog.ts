@@ -618,4 +618,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "nest-18",
     shorthand: "AUTO.CLAV HOLD // steam-ok",
   },
+  {
+    id: "pulse-rad-alt",
+    title: "Radar altimeter lock",
+    vertical: "orbital",
+    agentId: "iris-21",
+    shorthand: "RAD.ALT LOCK // height-ok",
+  },
 ];
