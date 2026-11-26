@@ -625,4 +625,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "RAD.ALT LOCK // height-ok",
   },
+  {
+    id: "pulse-gyro-comp",
+    title: "Gyro compass lock",
+    vertical: "maritime",
+    agentId: "iris-21",
+    shorthand: "GYRO.COMP LOCK // head-ok",
+  },
 ];
