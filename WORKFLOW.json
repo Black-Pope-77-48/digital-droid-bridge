@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-rad-alt",
-    "title": "Radar altimeter lock",
-    "shorthand": "RAD.ALT LOCK // height-ok",
-    "at": "2026-11-25T08:19:00Z"
+    "id": "pulse-gyro-comp",
+    "title": "Gyro compass lock",
+    "shorthand": "GYRO.COMP LOCK // head-ok",
+    "at": "2026-11-26T08:21:00Z"
   }
 }
