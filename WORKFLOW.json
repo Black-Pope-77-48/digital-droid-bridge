@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-gyro-comp",
-    "title": "Gyro compass lock",
-    "shorthand": "GYRO.COMP LOCK // head-ok",
-    "at": "2026-11-26T08:21:00Z"
+    "id": "pulse-cnc-tool",
+    "title": "CNC tool lock",
+    "shorthand": "CNC.TOOL LOCK // pos-ok",
+    "at": "2026-11-27T08:21:00Z"
   }
 }
