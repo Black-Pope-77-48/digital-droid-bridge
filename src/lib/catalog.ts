@@ -632,4 +632,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "iris-21",
     shorthand: "GYRO.COMP LOCK // head-ok",
   },
+  {
+    id: "pulse-cnc-tool",
+    title: "CNC tool lock",
+    vertical: "logistics",
+    agentId: "forge-44",
+    shorthand: "CNC.TOOL LOCK // pos-ok",
+  },
 ];
