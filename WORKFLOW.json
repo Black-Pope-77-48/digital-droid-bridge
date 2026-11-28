@@ -22,9 +22,9 @@
     ]
   },
   "lastPulse": {
-    "id": "pulse-cnc-tool",
-    "title": "CNC tool lock",
-    "shorthand": "CNC.TOOL LOCK // pos-ok",
-    "at": "2026-11-27T08:21:00Z"
+    "id": "pulse-hoist-lock",
+    "title": "Hoist cable lock",
+    "shorthand": "HOIST.CBL LOCK // load-ok",
+    "at": "2026-11-28T08:20:00Z"
   }
 }
