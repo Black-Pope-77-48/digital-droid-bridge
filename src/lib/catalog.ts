@@ -639,4 +639,11 @@ export const PULSE_TEMPLATES: JobTemplate[] = [
     agentId: "forge-44",
     shorthand: "CNC.TOOL LOCK // pos-ok",
   },
+  {
+    id: "pulse-hoist-lock",
+    title: "Hoist cable lock",
+    vertical: "logistics",
+    agentId: "rig-09",
+    shorthand: "HOIST.CBL LOCK // load-ok",
+  },
 ];
